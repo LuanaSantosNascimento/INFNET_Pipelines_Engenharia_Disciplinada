@@ -1,0 +1,11 @@
+name: Maven CI
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Maven Build
+        uses: actions/checkout@v4
+        run: .mvnw clean install -DskipTests

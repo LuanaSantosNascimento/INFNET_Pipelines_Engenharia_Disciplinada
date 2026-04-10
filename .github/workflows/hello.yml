@@ -1,0 +1,8 @@
+name: Hello CI/CD
+on: [push]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello message action step
+        run: echo "Hello CI/CD"
