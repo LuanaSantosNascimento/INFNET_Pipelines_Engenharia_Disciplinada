@@ -17,5 +17,4 @@ jobs:
           cache: 'maven'
 
       - name: Maven Build
-        uses: actions/checkout@v4
         run: mvn -B clean package -DskipTests
